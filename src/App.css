@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Poppins:wght@200;300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: poppins;
+  font-size: 15px;
+}
+
+.app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 50px 0;
+/*   background: 	#f0ffff; */
+}
+
+.title1{
+  margin-bottom: 50px;
+}
+
+.title1 h4{
+  font-size: 25px;
+}
+
+.bar{
+width: 80%;
+margin: 0 auto;
+background: dodgerblue;
+  height: 2px;
+}
+
+.card{
+  width: 350px;
+  padding: 30px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+.card >*{
+  margin-bottom: 10px;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image-wrap{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  position: relative;
+  left: calc(50% - 130px/2);
+}
+
+.image-wrap::after{
+  content: '';
+  position: absolute;
+  left: 6px;
+  bottom: 3px;
+  width: 100%; 
+  height: 100%;
+  background-color: dodgerblue;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.quote{
+  z-index: 100;
+  color: #fff;
+}
+
+.quote-wrap{
+  background: dodgerblue;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  padding: 5px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: grid;
+  place-items: center;
+  overflow: visible;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title h4:nth-child(2){
+  text-transform: uppercase;
+  color: #13579a;
+}
+
+.title h4:nth-child(1){
+  text-transform: capitalize;
+}
+
+.content{
+  text-align: center;
+  font-size: 11px;
+}
+
+.content p{
+  font-weight: 500;
+}
+
+.nav{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav button{
+  border: none;
+  color: dodgerblue;
+  font-size: 18px;
+  background: #fff;
+}
+
+.nav button:hover{
+  transform: scale(1.1);
+}
+
+.suprise{
+  text-align: center;
+}
+
+.suprise button{
+  border: none;
+  background: #0d70d3;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in;
+}
+
+.suprise button:hover{
+  background: 	#00ffff;
+  color: black;
+}
+
+button{
+  cursor: pointer;
+}
